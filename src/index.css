@@ -221,6 +221,11 @@ b{
   padding-top: 10px;
 }
 
+.HomeIcons {
+  display: flex;
+  gap: 2rem;
+}
+
 .TypeEffect{
   padding: 25px 0px;
   font-weight: 600;
