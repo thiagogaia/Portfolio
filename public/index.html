@@ -31,5 +31,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      const typebotInitScript = document.createElement("script");
+      typebotInitScript.type = "module";
+      typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2.22/dist/web.js'
+      
+      Typebot.initBubble({
+        typebot: "lead-magnet-snzqbyy",
+        apiHost: "http://typechat.thigato.site",
+        theme: {
+          button: { backgroundColor: "#1a5fff", iconColor: "#ffffff" },
+          previewMessage: { backgroundColor: "#171923" },
+        },
+      });
+      `;
+      document.body.append(typebotInitScript);
+
+    </script>
   </body>
 </html>
